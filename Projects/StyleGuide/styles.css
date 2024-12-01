@@ -1,0 +1,82 @@
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0 10%;
+}
+
+div {
+    display: block;
+}
+
+.container {
+    border: 2px solid lightgrey;
+    padding: 10px;
+    margin: 20px auto;
+    min-height: 100px;
+
+}
+
+.color-container {
+    width: 100%;
+}
+
+.font-container {
+    width: 100%;
+}
+
+.color {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+    font-size: 1.3em;
+}
+
+.font {
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+    margin: 10px 0; 
+}
+
+.label {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.regular {
+    font-style: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.lightcoral {
+    background-color: lightcoral;
+}
+
+.khaki {
+    background-color: khaki;
+}
+
+.seagreen {
+    background-color: seagreen;
+}
+
+.royalblue {
+    background-color: royalblue;
+}
+
+.source-code-pro {
+  font-family: 'Source Code Pro';
+}
+.nunito-sans{
+  font-family: 'Nunito Sans';
+}
+.poppins{
+  font-family: poppins;
+}
