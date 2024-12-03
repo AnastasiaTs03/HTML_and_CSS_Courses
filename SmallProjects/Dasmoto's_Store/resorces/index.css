@@ -1,0 +1,48 @@
+h1{
+    font-family: Helvetica;
+    font-size: 100px;
+    font-weight: bold;
+    color: khaki;
+    text-align: center;
+    background-image: url("../resorces/images/pattern.jpeg");
+    margin: 67px 0px;
+}
+h2{
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin:26.56px 0px;
+}
+
+h3{
+    font-family: Helvetica;
+    font-size: 18.72px;
+    margin: 18.72px;
+    
+}
+
+p{
+    font-family: Helvetica;
+    font-size: 16px;
+    margin: 16px 0px;
+}
+
+.price{
+    font-family: Helvetica;
+    font-weight: bold;
+    color: blue;
+    font-size: 16px;
+}
+
+#brush{
+    background-color: mediumspringgreen;
+}
+
+#frame{
+    background-color: lightcoral;
+}
+
+#paint{
+    background-color: skyblue;
+}
