@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="light">
+    <div class="level1">
+        <h1 class="level-headline">Level 1</h1>
+
+        <div class="level1-container">
+            <div class="headline">
+
+                <div class="headline-buttons">
+                    <button class="backgroundColor">Change background color</button>
+                    <button id='changeHeadlineColor'>Change text color</button>
+                    <button id='hideHeadline'>Show/Hide Headline</button>
+                    <button id='reset'>Reset</button>
+                </div>
+
+                <h1 id="headline">Headline</h1>
+            </div>
+
+
+            <div class="counter-container">
+                <p id='counter'>0</p>
+                <button id='count'>Click count</button>
+            </div>
+
+
+
+            <form action="index.html" method="GET" onsubmit="submitForm(event)">
+                <label for="name">Name: </label>
+                <input type="text" id="name">
+                <br>
+                <label for="email">Email: </label>
+                <input type="text" id='email'>
+                <br>
+                <button type="submit">Submit</button>
+                <div id="output"></div>
+            </form>
+
+
+
+
+            <button id=theme-toggle>Change theme</button>
+
+        </div>
+    </div>
+
+    <div class='level2'>
+        <h1 class="level2-headline">Level 2</h1>
+        <div class="level2-container">
+            <div class="list-container">
+                <h1>To do list</h1>
+                <input type="text" id="task" placeholder="New task">
+                <button id='addTaskBtn'>Add</button>
+
+                <ul id="taskList"></ul>
+            </div>
+
+
+
+            <div class="filter">
+                <input type="text" id="nameInput" />
+                <ul id='nameList'>
+                    <li>Nastia</li>
+                    <li>Natali</li>
+                    <li>Nazar</li>
+                    <li>Sofi</li>
+                    <li>Sasha</li>
+                    <li>Serhii</li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="sort">
+                <div class="sort-btns">
+                    <button id='up'>^</button>
+                    <button id='down'>v</button>
+                </div>
+                <table id='userTable'>
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td id='age'>Age</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
