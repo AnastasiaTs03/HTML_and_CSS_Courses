@@ -1,35 +1,39 @@
-body{
+body {
     font-family: Montserrat, sans-serif;
     background-color: lightsalmon;
     margin: 0;
 }
 
-#navbar{
+#navbar {
     display: flex;
     text-decoration: none;
     background-color: teal;
     padding-top: 15px;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     cursor: pointer;
 }
 
-li{
+li {
     display: inline-block;
     margin: 15px;
     color: lightsalmon;
     display: inline-block;
     font-size: 1.2em;
-    padding: 0.5rem 1,5rem;
+    padding: 0.5rem 1.5rem;
     margin-right: 1.5rem;
 }
 
-#intro{
+li:hover {
+    color: yellow;
+}
+
+#intro {
     background-image: url('images/steven-lelham-atSaEOeE8Nk-unsplash.jpg');
     height: 30rem;
     background-size: cover;
@@ -38,8 +42,11 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
-#intro h1{
+
+
+#intro h1 {
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     height: 8rem;
@@ -50,72 +57,123 @@ li{
     font-size: 2rem;
 }
 
-#summary, .photos, #review, #join{
+#summary,
+.photos,
+#review,
+#join {
     margin: 4em auto;
 }
 
-#summary{
+#summary {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
     padding: 0 1rem;
 }
 
-#summary h2{
+#summary h2 {
     color: yellow;
-    
+    text-align: center;
+
 }
-#summary p{
+
+#summary p {
     margin: 0.5rem 0;
     color: white;
 }
 
-a{
+a {
     text-decoration: underline;
     cursor: pointer;
     color: purple;
 }
 
 
-.photos img{
+.photos img {
     max-width: 30%;
-    margin: 1.5%; 
+    margin: 1.5%;
+
 }
 
-#review{
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.fade-up.show {
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#review {
     color: yellow;
     background-color: teal;
     height: 20rem;
     padding: 0 1rem;
     padding-top: 1.5rem;
 }
-#review h1{
+
+#review h1 {
     font-size: 2.5rem;
 }
 
-#join img{
+.review-text {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.review-text.slide-in-right {
+  animation: slideInRight 1s ease forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#join img {
     width: 50%;
     height: auto;
     display: block;
     margin: auto;
 }
 
-#join h1, p{
+#join h1,
+p {
     color: yellow;
     display: block;
     text-align: center;
 }
 
 @media only screen and (max-width: 960px) {
-    
-    .photos{
+
+    .photos {
         display: flex;
         flex-direction: column;
     }
-    
-    .photos img{
+
+    .photos img {
         max-width: 100%;
         margin: 0;
     }
-    
+
 }
